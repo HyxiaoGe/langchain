@@ -4,7 +4,7 @@ import { PromptTemplate } from "langchain/prompts";
 
 const prompt = new PromptTemplate({
   template: `the {attribute} of {target}`,
-  inputVariables: ["attribute", "target"]
+  inputVariables: ["attribute", "target"],
 });
 
 const init = async () => {
