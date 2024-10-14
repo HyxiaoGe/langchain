@@ -1,0 +1,26 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HyxiaoGe/langchain.git"
+  },
+  "author": "Hyxiao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyxiaoGe/langchain/issues"
+  },
+  "homepage": "https://github.com/HyxiaoGe/langchain#readme",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "html-to-text": "^9.0.5",
+    "langchain": "^0.0.136",
+    "pdf-parse": "^1.1.1"
+  }
+}
