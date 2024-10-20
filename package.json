@@ -17,6 +17,7 @@
   "homepage": "https://github.com/HyxiaoGe/langchain#readme",
   "description": "",
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.5",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.4.5",
     "html-to-text": "^9.0.5",
