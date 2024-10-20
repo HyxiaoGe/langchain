@@ -3,9 +3,15 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { Configuration } from "openai";
 
 import { createClient } from "@supabase/supabase-js";
+import { SerpAPI } from "langchain/tools";
 
-const { OPENAI_API_KEY, OPENAI_API_BASE_PATH, SUPABASE_URL, SUPABASE_KEY } =
-  process.env;
+const {
+  OPENAI_API_KEY,
+  OPENAI_API_BASE_PATH,
+  SUPABASE_URL,
+  SUPABASE_KEY,
+  SERP_API_KEY,
+} = process.env;
 
 const configuration = new Configuration({
   apiKey: OPENAI_API_KEY,
@@ -58,5 +64,7 @@ const embeddingModel = new OpenAIEmbeddings(
 );
 
 const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+const serpAPI = new SerpAPI(SERP_API_KEY);
 
 export { embeddingModel, supabaseClient };
